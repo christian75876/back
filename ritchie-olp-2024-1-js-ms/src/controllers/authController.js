@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { save, findByEmail } = require('../models/userModel');
+const auditTrail = require('../audit-trail'); 
 
 exports.register = async (req, res) => {
   try {
@@ -50,9 +51,9 @@ exports.login = async (req, res) => {
 
     // Generar token JWT
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-      expiresIn: '1h',
+      expiresIn: '24h',
     });
-
+    auditTrail.registrarInicioSesion(new Date(), email);
     res.json({ token, user: { id: user.id, username: user.username, email: user.email } });
   } catch (err) {
     console.error('Error en login:', err);
@@ -74,6 +75,7 @@ exports.verifyToken = (req, res) => {
     // Check is instance of TokenExpiredError
     if (err.name === 'TokenExpiredError') {
       return res.status(401).json({ message: 'Token expirado', valid: false });
+
     }
     // Check if instance of JsonWebTokenError
     if (err.name === 'JsonWebTokenError') {
