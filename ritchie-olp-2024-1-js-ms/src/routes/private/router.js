@@ -8,6 +8,7 @@ const router = express.Router();
 // Users
 router.use('/users', userRoutes);
 
+
 //Challenges
 router.use('/challenges', challengeRoutes);
 
