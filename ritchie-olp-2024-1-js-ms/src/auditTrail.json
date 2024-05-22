@@ -58,5 +58,40 @@
         "fecha": "2024-05-22T15:25:14.015Z",
         "email": "erick@giraldo.com",
         "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:29:41.682Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:31:56.461Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:38:52.362Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:45:57.790Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:51:23.610Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T20:22:46.290Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T20:23:04.616Z",
+        "email": "erick@giraldo.com",
+        "tipo": "login"
     }
 ]
