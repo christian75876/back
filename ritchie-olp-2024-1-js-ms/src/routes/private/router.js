@@ -2,6 +2,7 @@ const express = require('express');
 const userRoutes = require('./userRoutes');
 const challengeRoutes = require('./challengeRoutes');
 const forumRoutes = require('./forumRoutes');
+const auditTrail = required('./auditTrailRoutes');
 
 const router = express.Router();
 
