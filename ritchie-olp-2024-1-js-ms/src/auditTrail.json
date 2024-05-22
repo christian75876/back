@@ -13,5 +13,85 @@
         "fecha": "2024-05-21T06:56:21.034Z",
         "email": "johndoe@example.com",
         "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T21:38:32.673Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T22:19:22.263Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T22:19:23.185Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T22:19:23.645Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T22:19:24.256Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T22:19:25.268Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-21T22:19:26.574Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T11:10:37.699Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T15:25:14.015Z",
+        "email": "erick@giraldo.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:29:41.682Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:31:56.461Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:38:52.362Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:45:57.790Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T19:51:23.610Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T20:22:46.290Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T20:23:04.616Z",
+        "email": "erick@giraldo.com",
+        "tipo": "login"
     }
 ]
