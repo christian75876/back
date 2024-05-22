@@ -53,5 +53,10 @@
         "fecha": "2024-05-22T11:10:37.699Z",
         "email": "johndoe@example.com",
         "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-22T15:25:14.015Z",
+        "email": "erick@giraldo.com",
+        "tipo": "login"
     }
 ]
