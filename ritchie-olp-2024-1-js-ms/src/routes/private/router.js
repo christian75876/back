@@ -15,4 +15,7 @@ router.use('/challenges', challengeRoutes);
 //Forum
 router.use('/forum', forumRoutes);
 
+//Audit Trail
+router.use('/audit', auditTrail);
+
 module.exports = router;
