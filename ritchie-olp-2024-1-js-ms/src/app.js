@@ -3,7 +3,6 @@ const express = require('express');
 const cors = require('cors');
 const { unleashHTMLWelcome } = require('./helpers/unleash-welcome-a-la-nico');
 const router = require('./routes/router');
-const auditTrail = require('../src/audit-trail'); // Importar audit trail
 
 const app = express();
 
@@ -16,5 +15,3 @@ app.get('/', unleashHTMLWelcome);
 app.use('/api', router);
 
 module.exports = app;
-
-
