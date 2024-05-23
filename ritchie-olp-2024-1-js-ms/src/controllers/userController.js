@@ -1,4 +1,6 @@
-const { findById, update, delete: deleteUser, getAll, save } = require("../models/userModel");
+const bcrypt = require('bcryptjs');
+
+const { findByEmail ,findById, update, delete: deleteUser, getAll, save } = require("../models/userModel");
 
 exports.getAll = async (req, res) => {
     try {
@@ -71,10 +73,23 @@ exports.delete = async (req, res) => {
 
 exports.save = async (req, res) => {
     try {
-        const {username, email, hashedPassword} = req.body;
+        const {username, email, password} = req.body;
+
         if(!username || !email || !hashedPassword){
             return res.status(400).json({message: 'Todos los cmapos son requeridos'});
         }
+
+        // Verificar si el usuario ya existe
+        let user = await findByEmail(email);
+        if (user) {
+          return res.status(400).json({ message: 'El usuario ya existe' });
+        }
+
+        // Encriptar contraseña
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+
+        
         await save(username, email, hashedPassword)
         return res.status(200).json({message: 'Usuario creado con éxito!'})
     } catch (error) {
