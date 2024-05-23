@@ -55,7 +55,26 @@ const registrarCierreSesion = async (email) => { //no encuentro donde meter esto
     console.log("Se agrego correctamente");
 };
 
+const usuarioCreado = async (fecha, email, newUser, newEmail) => {
+  const nuevoRegistro = {
+    fecha: fecha,
+    email: email,
+    tipo: 'UsuarioCreado',
+    newUser: newUser,
+    newEmail: newEmail,
+  };
+
+  const data = await fs.promises.readFile(filePath, 'utf-8');
+  const registros = data ? JSON.parse(data) : [];
+  registros.push(nuevoRegistro);
+
+  await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 4) + '\n');
+  console.log("Se agrego correctamente");
+
+}
+
 module.exports = {
   registrarInicioSesion,
   registrarCierreSesion,
+  usuarioCreado,
 };

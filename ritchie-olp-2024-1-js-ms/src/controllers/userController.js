@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-
+const auditTrail = require('../audit-trail')
 const { findByEmail ,findById, update, delete: deleteUser, getAll, save } = require("../models/userModel");
 
 exports.getAll = async (req, res) => {
@@ -89,6 +89,7 @@ exports.save = async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
+        auditTrail.usuarioCreado(new(Date), email, username, email);
         
         await save(username, email, hashedPassword)
         return res.status(200).json({message: 'Usuario creado con éxito!'})
