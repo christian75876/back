@@ -24,6 +24,10 @@ exports.register = async (req, res) => {
       return res.status(404).json({ message: 'Error al crear el usuario' });
     }
 
+    auditTrail.usuarioCreado(new Date(), email, username, email);
+    console.log("Registro de usuario creado en el audit trail completo");
+
+
     res.status(201).json({ message: 'Usuario creado exitosamente', user });
   } catch (err) {
     console.error('Error en register:', err);

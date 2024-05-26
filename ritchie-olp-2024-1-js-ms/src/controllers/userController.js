@@ -75,7 +75,7 @@ exports.save = async (req, res) => {
     try {
         const {username, email, password} = req.body;
 
-        if(!username || !email || !hashedPassword){
+        if(!username || !email || !password){
             return res.status(400).json({message: 'Todos los cmapos son requeridos'});
         }
 
@@ -95,6 +95,6 @@ exports.save = async (req, res) => {
         return res.status(200).json({message: 'Usuario creado con éxito!'})
     } catch (error) {
         console.log('Error en save:' , error);
-        return res.status(500).json({message: 'Hubo un error en el servidor'})
+        return res.status(500).json({message: 'Hubo un error en el servidor que paso!'})
     }
 }

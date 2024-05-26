@@ -98,5 +98,60 @@
         "fecha": "2024-05-23T12:15:25.013Z",
         "email": "johndoe@example.com",
         "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T13:12:48.048Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T13:12:48.048Z",
+        "email": "johndoe@example.com",
+        "tipo": "Cualquier cosa",
+        "prueba": "Cualquier cosa"
+    },
+    {
+        "fecha": "2024-05-26T13:41:56.828Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T13:43:25.653Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T13:44:22.551Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T14:03:08.334Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T14:08:34.072Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T14:11:30.831Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T14:22:13.158Z",
+        "email": "pedro@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "pedro",
+        "newEmail": "pedro@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T14:41:03.122Z",
+        "email": "sebastian@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "sebastian",
+        "newEmail": "sebastian@correo.co"
     }
 ]

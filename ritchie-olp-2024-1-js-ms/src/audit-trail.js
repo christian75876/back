@@ -69,7 +69,7 @@ const usuarioCreado = async (fecha, email, newUser, newEmail) => {
   registros.push(nuevoRegistro);
 
   await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 4) + '\n');
-  console.log("Se agrego correctamente");
+  console.log("Se agrego correctamente desde usuario creado!");
 
 }
 
