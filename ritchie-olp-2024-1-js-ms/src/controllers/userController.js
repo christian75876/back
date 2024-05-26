@@ -76,7 +76,7 @@ exports.save = async (req, res) => {
         const {username, email, password} = req.body;
 
         if(!username || !email || !password){
-            return res.status(400).json({message: 'Todos los cmapos son requeridos'});
+            return res.status(400).json({message: 'Todos los campos son requeridos'});
         }
 
         // Verificar si el usuario ya existe

@@ -76,6 +76,22 @@ const usuarioCreado = async (fecha, userId, newUser, newEmail) => {
 
 }
 
+const usuarioEliminado = async (fecha, userId, userDelete) =>{
+  const nuevoRegistro = {
+    fecha: fecha,
+    email, userId,
+    userDelete,
+  };
+
+  const data  = await fs.promises.readFile(filePath, 'utf-8');
+  const registros = data ? JSON.parse(data):[];
+  registros.push(nuevoRegistro);
+
+  await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 2) + '\n');
+  console.log("Se agrego correctamente desde usuario eliminado!");
+
+}
+
 module.exports = {
   registrarInicioSesion,
   registrarCierreSesion,
