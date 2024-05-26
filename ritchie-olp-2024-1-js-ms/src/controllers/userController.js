@@ -89,12 +89,13 @@ exports.save = async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
-        auditTrail.usuarioCreado(new(Date), email, username, email);
+        auditTrail.usuarioCreado(new(Date), req.user.id, username, email);
+        console.log(req.user.id)
         
         await save(username, email, hashedPassword)
         return res.status(200).json({message: 'Usuario creado con éxito!'})
     } catch (error) {
         console.log('Error en save:' , error);
-        return res.status(500).json({message: 'Hubo un error en el servidor que paso!'})
+        return res.status(500).json({message: 'Hubo un error en el servidor que paso!', error})
     }
 }

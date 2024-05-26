@@ -55,14 +55,16 @@ const registrarCierreSesion = async (email) => { //no encuentro donde meter esto
     console.log("Se agrego correctamente");
 };
 
-const usuarioCreado = async (fecha, email, newUser, newEmail) => {
+const usuarioCreado = async (fecha, userId, newUser, newEmail) => {
   const nuevoRegistro = {
     fecha: fecha,
-    email: email,
+    email: userId,
     tipo: 'UsuarioCreado',
     newUser: newUser,
     newEmail: newEmail,
   };
+
+  console.log(userId);
 
   const data = await fs.promises.readFile(filePath, 'utf-8');
   const registros = data ? JSON.parse(data) : [];

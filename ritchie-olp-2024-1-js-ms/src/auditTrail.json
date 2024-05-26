@@ -153,5 +153,54 @@
         "tipo": "UsuarioCreado",
         "newUser": "sebastian",
         "newEmail": "sebastian@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:05:53.783Z",
+        "email": "emi@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "emi",
+        "newEmail": "emi@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:33:11.591Z",
+        "email": "jaramillo@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "jaramillo",
+        "newEmail": "jaramillo@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:35:52.709Z",
+        "email": "pruebaA@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "pruebaA",
+        "newEmail": "pruebaA@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:45:11.787Z",
+        "email": "ID@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "pruebaID",
+        "newEmail": "ID@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:46:06.067Z",
+        "email": "prueba5@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba5",
+        "newEmail": "prueba5@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:49:34.476Z",
+        "email": "pruebas9@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "pruebas9",
+        "newEmail": "pruebas9@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T15:50:47.624Z",
+        "email": 1,
+        "tipo": "UsuarioCreado",
+        "newUser": "pruebas10",
+        "newEmail": "pruebas10@correo.co"
     }
 ]
