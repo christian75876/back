@@ -56,6 +56,7 @@ const registrarCierreSesion = async (email) => { //no encuentro donde meter esto
 };
 
 const usuarioCreado = async (fecha, userId, newUser, newEmail) => {
+  
   const nuevoRegistro = {
     fecha: fecha,
     email: userId,

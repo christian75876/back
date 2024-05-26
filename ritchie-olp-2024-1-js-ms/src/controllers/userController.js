@@ -89,8 +89,17 @@ exports.save = async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
-        auditTrail.usuarioCreado(new(Date), req.user.id, username, email);
-        console.log(req.user.id)
+        const token = req.headers.authorization.split(' ')[1]; // Obtener token del header
+
+        const resp = await fetch(`http://localhost:4000/api/users/${req.user.id}/`, {
+        method: 'GET',
+        headers: {
+          "Authorization" : `Bearer ${token}`
+        }});
+        const aux = await resp.json();
+
+        auditTrail.usuarioCreado(new(Date), aux.username, username, email);
+        console.log(aux.username);
         
         await save(username, email, hashedPassword)
         return res.status(200).json({message: 'Usuario creado con éxito!'})

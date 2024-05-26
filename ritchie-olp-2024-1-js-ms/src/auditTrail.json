@@ -202,5 +202,68 @@
         "tipo": "UsuarioCreado",
         "newUser": "pruebas10",
         "newEmail": "pruebas10@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T16:06:54.546Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T16:22:31.206Z",
+        "email": "johndoe@example.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-26T16:23:44.529Z",
+        "email": 1,
+        "tipo": "UsuarioCreado",
+        "newUser": "draco",
+        "newEmail": "draco@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T16:25:00.293Z",
+        "email": 1,
+        "tipo": "UsuarioCreado",
+        "newUser": "lucifer",
+        "newEmail": "lucifer@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T16:26:18.841Z",
+        "email": {
+            "id": 1,
+            "username": "johndoe",
+            "email": "johndoe@example.com",
+            "password": "$2a$10$y6a.ngs8JfCG4z0jslxFJuLnb7uOt/jmZ4SeZyQffLux8bg16ayxW",
+            "created_at": "2024-05-08T23:02:00.546Z",
+            "updated_at": "2024-05-08T23:02:00.546Z",
+            "id_role": null,
+            "points": null
+        },
+        "tipo": "UsuarioCreado",
+        "newUser": "oliverr",
+        "newEmail": "oliverr@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T16:27:34.686Z",
+        "email": {
+            "id": 1,
+            "username": "johndoe",
+            "email": "johndoe@example.com",
+            "password": "$2a$10$y6a.ngs8JfCG4z0jslxFJuLnb7uOt/jmZ4SeZyQffLux8bg16ayxW",
+            "created_at": "2024-05-08T23:02:00.546Z",
+            "updated_at": "2024-05-08T23:02:00.546Z",
+            "id_role": null,
+            "points": null
+        },
+        "tipo": "UsuarioCreado",
+        "newUser": "huesos",
+        "newEmail": "huesos@correo.co"
+    },
+    {
+        "fecha": "2024-05-26T16:28:37.614Z",
+        "email": "johndoe",
+        "tipo": "UsuarioCreado",
+        "newUser": "pruebaX",
+        "newEmail": "pruebaX@correo.co"
     }
 ]
