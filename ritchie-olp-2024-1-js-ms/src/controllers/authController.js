@@ -26,7 +26,12 @@ exports.register = async (req, res) => {
 
     auditTrail.usuarioCreado(new Date(), email, username, email);
     console.log("Registro de usuario creado en el audit trail completo");
-
+    const authHeader = req.headers['authorization'];
+    console.log(authHeader);
+    const token = authHeader.split(' ')[1];
+    const decode = jwt.decode(token);
+    const id = decode.id;
+    console.log(id);
 
     res.status(201).json({ message: 'Usuario creado exitosamente', user });
   } catch (err) {

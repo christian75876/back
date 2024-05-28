@@ -265,5 +265,160 @@
         "tipo": "UsuarioCreado",
         "newUser": "pruebaX",
         "newEmail": "pruebaX@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T16:49:43.579Z",
+        "email": "prueba24@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba24",
+        "newEmail": "prueba24@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T16:52:08.565Z",
+        "email": "prueba23@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba23",
+        "newEmail": "prueba23@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T16:55:39.643Z",
+        "email": "prueba25@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba25",
+        "newEmail": "prueba25@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T16:56:36.054Z",
+        "email": "camilo@pabon.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-28T17:01:11.595Z",
+        "email": "camilo@pabon.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-28T17:10:43.952Z",
+        "email": "qwerty@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "qwerty",
+        "newEmail": "qwerty@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T17:12:04.176Z",
+        "email": "qwerty1@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "qwerty1",
+        "newEmail": "qwerty1@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T17:15:19.061Z",
+        "email": "johndoe",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba31",
+        "newEmail": "prueba31@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T17:21:15.397Z",
+        "email": "johndoe",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba33",
+        "newEmail": "prueba33@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T17:31:13.090Z",
+        "email": "johndoe",
+        "tipo": "UsuarioCreado",
+        "newUser": "noEnvia",
+        "newEmail": "noEnvia@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:11:07.684Z",
+        "email": "camilo@pabon.com",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-28T19:15:44.489Z",
+        "email": "hernanHerrera@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "hernanHerrera",
+        "newEmail": "hernanHerrera@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:32:10.066Z",
+        "email": "prueba40@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "prueba40",
+        "newEmail": "prueba40@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:42:04.639Z",
+        "email": "user1@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user1",
+        "newEmail": "user1@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:45:21.562Z",
+        "email": "user2@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user2",
+        "newEmail": "user2@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:48:25.270Z",
+        "email": "user3@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user3",
+        "newEmail": "user3@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:51:23.643Z",
+        "email": "user4@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user4",
+        "newEmail": "user4@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:52:09.586Z",
+        "email": "user5@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user5",
+        "newEmail": "user5@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:53:02.158Z",
+        "email": "user6@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user6",
+        "newEmail": "user6@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T19:54:00.895Z",
+        "email": "user7@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user7",
+        "newEmail": "user7@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T20:02:46.878Z",
+        "email": "user8@gmail.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user8",
+        "newEmail": "user8@gmail.co"
+    },
+    {
+        "fecha": "2024-05-28T20:07:34.318Z",
+        "email": "user9@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user9",
+        "newEmail": "user9@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T20:14:48.289Z",
+        "email": "user0@correo.co",
+        "tipo": "UsuarioCreado",
+        "newUser": "user0",
+        "newEmail": "user0@correo.co"
     }
 ]
