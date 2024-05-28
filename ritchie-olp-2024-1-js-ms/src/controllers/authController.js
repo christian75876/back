@@ -24,7 +24,6 @@ exports.register = async (req, res) => {
       return res.status(404).json({ message: 'Error al crear el usuario' });
     }
 
-    auditTrail.usuarioCreado(new Date(), email, username, email);
     console.log("Registro de usuario creado en el audit trail completo");
     const authHeader = req.headers['authorization'];
     console.log(authHeader);
@@ -32,6 +31,16 @@ exports.register = async (req, res) => {
     const decode = jwt.decode(token);
     const id = decode.id;
     console.log(id);
+
+    const resp = await fetch(`http://localhost:4000/api/users/${id}/`, {
+        method: 'GET',
+        headers: {
+          "Authorization" : `Bearer ${token}`
+        }});
+        const aux = await resp.json();
+        console.log(aux);
+        auditTrail.usuarioCreado(new Date(), aux.username, username, email);
+        console.log(aux.username);
 
     res.status(201).json({ message: 'Usuario creado exitosamente', user });
   } catch (err) {

@@ -420,5 +420,12 @@
         "tipo": "UsuarioCreado",
         "newUser": "user0",
         "newEmail": "user0@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T20:24:41.812Z",
+        "email": "camilo",
+        "tipo": "UsuarioCreado",
+        "newUser": "user12",
+        "newEmail": "user12@correo.co"
     }
 ]
