@@ -427,5 +427,52 @@
         "tipo": "UsuarioCreado",
         "newUser": "user12",
         "newEmail": "user12@correo.co"
+    },
+    {
+        "fecha": "2024-05-28T20:26:20.166Z",
+        "email": "camilo",
+        "tipo": "UsuarioCreado",
+        "newUser": "user13",
+        "newEmail": "user13@correo.co"
+    },
+    {
+        "fecha": "2024-05-29T01:24:24.339Z",
+        "email": "user2@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T02:16:09.642Z",
+        "email": "user12@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T13:08:35.045Z",
+        "email": "user2@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T13:11:04.806Z",
+        "email": "user2@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T13:38:14.346Z",
+        "email": "prueba33@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T19:17:35.501Z",
+        "email": "user12@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T19:17:36.179Z",
+        "email": "user12@correo.co",
+        "tipo": "login"
+    },
+    {
+        "fecha": "2024-05-29T19:27:02.173Z",
+        "email": "user2@correo.co",
+        "tipo": "login"
     }
 ]

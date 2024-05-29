@@ -17,13 +17,14 @@ exports.save = async (username, email, hashedPassword) => {
 
 exports.update = async (id, data) => {
   const query = `UPDATE users
-                 SET username = $1, email = $2, password = $3
+                 SET username = $1, email = $2, password = $3, updated_at = CURRENT_TIMESTAMP
                  WHERE id = $4
-                 RETURNING id, username, email`;
+                 RETURNING id, username, email, updated_at`;
   const values = [data.username, data.email, data.password, id];
   const { rows } = await pool.query(query, values);
   return rows[0];
 }
+
 
 exports.delete = async (id) => {
   const query = `DELETE FROM users WHERE id = $1`;
