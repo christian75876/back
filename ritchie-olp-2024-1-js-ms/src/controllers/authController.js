@@ -39,7 +39,7 @@ exports.register = async (req, res) => {
         }});
         const aux = await resp.json();
         console.log(aux);
-        auditTrail.usuarioCreado(new Date(), aux.username, username, email);
+        auditTrail.userCreated(new Date(), aux.username, username, email);
         console.log(aux.username);
 
     res.status(201).json({ message: 'Usuario creado exitosamente', user });
@@ -71,7 +71,7 @@ exports.login = async (req, res) => {
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
       expiresIn: '24h',
     });
-    auditTrail.registrarInicioSesion(new Date(), email);
+    auditTrail.registerLoginSession(email);
     res.json({ token, user: { id: user.id, username: user.username, email: user.email } });
   } catch (err) {
     console.error('Error en login:', err);

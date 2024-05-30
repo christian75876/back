@@ -2,65 +2,45 @@ const fs = require('fs');
 const path = require('path');
 
 const filePath = path.join(__dirname, 'auditTrail.json');
-console.log("audit-trail funcionando");
+console.log("audit-trail working");
 
-/*
-version12 finalmente funcional pero con error
 
-const registrarInicioSesion = async (fecha, email) => {
-  const nuevoRegistro = {
-    "fecha": fecha,
-    "email": email,
-    tipo: 'login',
-  };
-  
-  fs.appendFile(filePath, JSON.stringify(nuevoRegistro), (error) => {
-        if (error) {
-            console.log("Error al agregar");
-            throw new error("Error inesperado", error);
-        } else {
-            console.log("Se agrego correctamente");
-        }
-    })
-};
-*/
-
-//instanciado en la linea 56 de authControoller.js como auditTrail.registrarInicioSesion(new Date(), email);
-const registrarInicioSesion = async (fecha, email) => {
-    const nuevoRegistro = {
-        fecha: fecha,
+//
+const registerLoginSession = async (email) => {
+    const newRecord = {
+        date: new Date().toISOString(),
         email: email,
         tipo: 'login',
     };
 
     const data = await fs.promises.readFile(filePath, 'utf8');
     const registros = data ? JSON.parse(data) : [];
-    registros.push(nuevoRegistro);
+    registros.push(newRecord);
 
     await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 4) + '\n');
-    console.log("Se agrego correctamente");
+    console.log("login registered in the audit");
 };
 
-const registrarCierreSesion = async (email) => { //no encuentro donde meter esto, no hay cierre de sesion como tal
-  const nuevoRegistro = {
+const registerCloseSession = async (email) => { //no encuentro donde meter esto, no hay cierre de sesion como tal
+  const newRecord = {
     email: email,
     tipo: 'logout',
-    fecha: new Date().toISOString(),
+    date: new Date().toISOString(),
   };
     const data = await fs.promises.readFile(filePath, 'utf8');
     const registros = data ? JSON.parse(data) : [];
-    registros.push(nuevoRegistro);
+    registros.push(newRecord);
 
     await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 2) + '\n');
-    console.log("Se agrego correctamente");
+    console.log("logout recorded in the audit");
 };
 
-const usuarioCreado = async (fecha, userId, newUser, newEmail) => {
+const userCreated = async (date, userId, newUser, newEmail) => {
   
-  const nuevoRegistro = {
-    fecha: fecha,
+  const newRecord = {
+    date: date,
     email: userId,
-    tipo: 'UsuarioCreado',
+    tipo: 'userCreated',
     newUser: newUser,
     newEmail: newEmail,
   };
@@ -69,31 +49,32 @@ const usuarioCreado = async (fecha, userId, newUser, newEmail) => {
 
   const data = await fs.promises.readFile(filePath, 'utf-8');
   const registros = data ? JSON.parse(data) : [];
-  registros.push(nuevoRegistro);
+  registros.push(newRecord);
 
   await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 4) + '\n');
-  console.log("Se agrego correctamente desde usuario creado!");
+  console.log("The added user was successfully added to the audit!");
 
 }
 
-const usuarioEliminado = async (fecha, userId, userDelete) =>{
-  const nuevoRegistro = {
-    fecha: fecha,
+const usuarioEliminado = async (date, userId, userDelete) =>{
+  const newRecord = {
+    date: date,
     email, userId,
     userDelete,
   };
 
   const data  = await fs.promises.readFile(filePath, 'utf-8');
   const registros = data ? JSON.parse(data):[];
-  registros.push(nuevoRegistro);
+  registros.push(newRecord);
 
   await fs.promises.writeFile(filePath, JSON.stringify(registros, null, 2) + '\n');
-  console.log("Se agrego correctamente desde usuario eliminado!");
+  console.log("The deleted user was successfully added to the audit!");
 
 }
 
 module.exports = {
-  registrarInicioSesion,
-  registrarCierreSesion,
-  usuarioCreado,
+  registerLoginSession,
+  registerCloseSession,
+  userCreated,
+  usuarioEliminado,
 };

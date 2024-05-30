@@ -479,5 +479,27 @@
         "fecha": "2024-05-30T00:16:36.550Z",
         "email": "user2@correo.co",
         "tipo": "login"
+    },
+    {
+        "date": "2024-05-30T21:26:13.395Z",
+        "email": "harold@medrano",
+        "tipo": "login"
+    },
+    {
+        "date": "2024-05-30T21:26:22.200Z",
+        "email": "harold@medrano",
+        "tipo": "login"
+    },
+    {
+        "date": "2024-05-30T21:27:44.763Z",
+        "email": "erick@giraldo.com",
+        "tipo": "login"
+    },
+    {
+        "date": "2024-05-30T21:29:24.872Z",
+        "email": "Erick",
+        "tipo": "userCreated",
+        "newUser": "Ana",
+        "newEmail": "ana@email.com"
     }
 ]

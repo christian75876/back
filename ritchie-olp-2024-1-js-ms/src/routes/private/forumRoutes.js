@@ -4,7 +4,7 @@ const { getAll } = require('../../controllers/challengeController');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('Desde el foro');
+    res.send('from forum');
 })
 
 module.exports = router;
