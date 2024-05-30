@@ -13,3 +13,12 @@ exports.findById = async (id) => {
     const { rows } = await pool.query(query, values);
     return rows[0];
 }
+
+exports.create = async (tittle, content, description) => {
+  const query = `INSERT INTO challenges (title, content, description)
+                VALUES ($1, $2, $3)
+                RETURNING id, title, content, description`;
+  const values = [tittle, content, description];
+  const { rows } = await pool.query(query, values);
+  return rows[0];
+}

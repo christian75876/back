@@ -1,4 +1,4 @@
-const { getAll, findById } = require("../models/challengeModel");
+const { getAll, findById, create } = require("../models/challengeModel");
 
 exports.getAll = async (req, res) => {
     try {
@@ -22,5 +22,19 @@ exports.getById = async (req, res) => {
     } catch (err) {
         console.error('Error en getById:', err);
         res.status(500).json({ message: 'Error en el servidor' });
+    }
+}
+
+//Crear nuevo reto
+exports.create = async (req, res) => { 
+    try {
+        const {title, content, description} = req.body;
+
+        //Crear nuevo reto
+        challenge = await create(title, content, description);
+        res.status(201).json({message: 'Challenge successfully', challenge: challenge});
+    } catch (error) {
+        console.error('Error in add challenge', error);
+        res.status(500).json({message: 'Error creating challenge', error});
     }
 }
