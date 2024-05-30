@@ -28,13 +28,17 @@ exports.getById = async (req, res) => {
 //Crear nuevo reto
 exports.create = async (req, res) => { 
     try {
-        const {title, content, description} = req.body;
+        const { title, content, description } = req.body;
+
+        //formateado como JSON para poder pintar de forma correcta
+        const formattedContent = JSON.stringify(content);
+        const formattedDescription = JSON.stringify(description);
 
         //Crear nuevo reto
-        challenge = await create(title, content, description);
-        res.status(201).json({message: 'Challenge successfully', challenge: challenge});
+        const challenge = await create(title, formattedContent, formattedDescription);
+        res.status(201).json({ message: 'Challenge created successfully', challenge: challenge });
     } catch (error) {
-        console.error('Error in add challenge', error);
-        res.status(500).json({message: 'Error creating challenge', error});
+        console.error('Error in create challenge:', error);
+        res.status(500).json({ message: 'Error creating challenge', error });
     }
 }
