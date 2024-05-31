@@ -5,7 +5,6 @@ const filePath = path.join(__dirname, 'auditTrail.json');
 console.log("audit-trail working");
 
 
-//
 const registerLoginSession = async (email) => {
     const newRecord = {
         date: new Date().toISOString(),
